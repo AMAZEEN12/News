@@ -1,0 +1,324 @@
+body{
+    min-height: 100vh;
+    font-family: 'Geneva', sans-serif;
+    background-color: hsl(36, 100%, 99%);
+    margin: 50px 150px 150px 150px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.icon{
+    display: none;
+}
+ul li{
+    list-style: none;
+}
+#nav-bar ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: hsl(236, 13%, 42%);
+}
+li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.section1{
+    display: flex;
+    gap: 50px;
+}
+.class2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.bright{
+    font-size: 48px;
+    font-weight: 900;
+    width: 20vw;
+    padding-right: 30px;
+}
+.sub-class1{
+    width: 20vw;
+}
+#para{
+    font-size: 16px;
+    color: hsl(236, 13%, 42%);
+    line-height: 25px;
+}
+#button{
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    border: none;
+    font-weight: 600;
+}
+#button:hover{
+    background-color: hsl(240, 100%, 5%);
+    transition: 0.5s ease-in-out;
+}
+.class3{
+    background-color: hsl(240, 100%, 5%);
+    padding-left:20px;
+    width: 50vw;
+}
+.new{
+    color: hsl(35, 77%, 62%);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.para2{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-top: 30px;
+}
+.para2:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.para3{
+    font-size: 14px;
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 50px;
+    width: 90%;
+}
+hr{
+    width: 90%;
+    opacity: 0.6;
+    margin-right: 30px;
+}
+.section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.last1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pad{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.number{
+    color: hsl(233, 8%, 79%);
+    font-size: 24px;
+    font-weight: 700;
+}
+.image-text{
+    color: hsl(240, 100%, 5%);
+    font-size: 15px;
+    font-weight: 900;
+}
+.image-text:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.text{
+    font-size: 14px;
+    width: 16vw;
+    color: hsl(236, 13%, 42%);
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width:450px){
+    .icon{
+        display: block;
+        position: absolute;
+        left: 80vw;
+    }
+    
+    body{
+        margin: 30px 15px;
+    }
+    .header{
+        display: flex;
+        gap: 200px;
+    }
+    nav{
+        display: none;
+        background-color: white;
+        text-align: left;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .class2{
+        flex-direction: column;
+    }
+    .bright{
+        width: 90%;
+    }
+    #para{
+        width: 300%;
+    }
+    .para2{
+        font-size: 22px;
+    }
+    .para3{
+        font-size: 15px;
+    }
+    #button{
+        width: 250px;
+    }
+    .class3{
+        width: 320px;
+    }
+    .section2{
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+        font-size: 15px;
+    }
+    .image-text{
+        font-size: 15px;
+    }
+    .number{
+        font-size: 20px;
+    }
+    li a{
+        font-size: 24px;
+    }
+    #nav-bar ul{
+        animation: slideIn 1s;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        left: 50vw;
+        padding: 20px 10px;
+        width: 43vw;
+        height: 100vh;
+        overflow: hidden;
+        top: 8vh;
+        text-align: left;
+        z-index: 1;
+    }
+    ul li{
+        padding-top: 20px;      
+    }
+    @keyframes slideIn {
+        from{
+            left: 280px;
+        }
+        to{
+            left: 50vw;            
+        
+        }
+
+    }
+}
+@media screen and (min-width:451px) and (max-width:620px){
+    .icon{
+        display: block;
+        position: absolute;
+        left: 80vw;
+    }
+    
+    body{
+        margin: 30px 15px;
+    }
+    .header{
+        display: flex;
+        gap: 200px;
+    }
+    nav{
+        display: none;
+        background-color: white;
+        text-align: left;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 580px;
+        height: 400px;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .class2{
+        flex-direction: column;
+    }
+    .bright{
+        width: 90%;
+    }
+    #para{
+        width: 80vw;
+    }
+    #button{
+        width: 250px;
+    }
+    .new{
+        font-size: 30px;
+    }
+    .para2{
+        font-size: 20px;
+    }
+    
+    .class3{
+        width: 90vw;
+    }
+    .section2{
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+    }
+    #nav-bar ul{
+        animation: slideIn 1s;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        left: 50vw;
+        padding: 20px 10px;
+        width: 46vw;
+        height: 100vh;
+        overflow: hidden;
+        top: 8vh;
+        text-align: left;
+    }
+    ul li{
+        padding-top: 20px;
+        
+    }
+    @keyframes slideIn {
+        from{
+            left: 80vw;
+        }
+        to{
+            left: 50vw;            
+        
+        }
+
+    }
+    hr{
+        width: 80vw;
+        margin-left: 10px;
+    }
+}
